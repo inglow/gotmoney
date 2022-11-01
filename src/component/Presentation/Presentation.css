@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+.presentation {
+  background-color:  var(--grey-background);
+
+  box-shadow:0 3px 8px 0 rgb(15 15 20 / 20%);
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 100%;
+}
+.presentation-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--white-background);
+  box-shadow: var(--white-shadow);
+  padding: 50px;
+  height: 300px;
+}
+.face {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+.name-txt {
+  margin-top: 17px;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.job-txt {
+  font-size: 90%;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.presentation-content {
+  height: 600px;
+  display: block;
+  margin-top: 15px;
+  overflow: auto;
+}
+.presentation-desc {
+
+}
+.presentation-footer {
+  position: absolute;
+  bottom: 0px;
+  background: var(--white-background);
+  width: 100%;
+ 
+}

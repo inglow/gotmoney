@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+.presentation-line {
+display: flex;
+justify-content: space-between;
+align-items:center;
+margin-left: 10%;
+margin-right: 10%;
+}
+.presentation-value {
+font-size: 90%;
+}
