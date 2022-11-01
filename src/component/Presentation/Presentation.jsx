@@ -20,7 +20,7 @@ function Presentation() {
     <div className="presentation-desc">
       <PresentationLine name="Residence" value="Canada" />
       <PresentationLine name="Residence" value="Canada" />
-      <PresentationLine name="test" value="Canada" />
+      <PresentationLine name="test2" value="Canada" />
       <CircularProgressBar />
     </div>
   ), []);
