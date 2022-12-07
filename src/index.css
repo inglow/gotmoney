@@ -1,7 +1,6 @@
-html, body {
-  font-family: 'Poppins', sans-serif;
+html,
+body {
+  font-family: "Poppins", sans-serif;
   height: 100%;
-  overflow: hidden;
+  overflow: visible;
 }
-
-

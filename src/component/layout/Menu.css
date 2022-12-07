@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+.menu-right {
+  box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+  background-color: var(--grey-background);
+  position: fixed;
+  top: 15px;
+  bottom: 15px;
+  right: 15px;
+  width: 90px;
+}
+
+.hambuger {
+  background-color: white;
+  box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.hambuger :hover {
+  color: var(--secondary-color);
+}
+@media only screen and (max-width: 1000px) {
+  .menu-right {
+   display: none;
+  }
+}

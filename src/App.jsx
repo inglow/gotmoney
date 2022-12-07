@@ -5,6 +5,7 @@ import {
 import './App.css';
 import Layout from './component/layout/Layout';
 import Contact from './screen/Contact';
+import Experience from './screen/Experience';
 import Home from './screen/Home';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>

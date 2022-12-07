@@ -1,25 +1,25 @@
-import { Drawer } from '@mui/material';
 import PropTypes from 'prop-types';
 import React from 'react';
 import Presentation from '../Presentation/Presentation';
-import Header from './Header';
+import Menu from './Menu';
+import HeaderMobile from './HeaderMobile';
 import './Layout.css';
+import Footer from './Footer';
 
 function Layout({ children }) {
   return (
-    <div className="">
-      <Header />
+    <div className="layout">
+      <HeaderMobile />
+      <div className="container-top" />
       <div className="content">
         <Presentation />
-        {children}
+        <div className="content-body">
+          {children}
+          <Footer />
+        </div>
+        <Menu />
       </div>
-      <Drawer
-        anchor="right"
-        open={false}
-      >
-        ddddd
-
-      </Drawer>
+      <div className="container-bottom" />
     </div>
   );
 }

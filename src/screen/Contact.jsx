@@ -7,7 +7,7 @@ function Contact() {
       <h2>GeeksforGeeks is a computer science portal for geeks!</h2>
 
       Read more about us at :
-      <a href="https://www.geeksforgeeks.org/about/">
+      <a href="https://www.geeksforgeeks.org/about/fas">
         https://www.geeksforgeeks.org/about/
       </a>
     </div>

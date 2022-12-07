@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import ReactPlayer from 'react-player';
-import Vid from './assets/example.mp4';
 import './IphoneDisplay.css';
 
 export default function IphoneDisplay() {
@@ -14,7 +13,7 @@ export default function IphoneDisplay() {
       <div className="iphone-x">
         <div className="iphone-header" />
         <ReactPlayer
-          url={Vid}
+          // url={Vid}
           playing
           controls
           loop
