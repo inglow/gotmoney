@@ -2,11 +2,13 @@
 
 .presentation {
   background-color:  var(--grey-background);
-
-  box-shadow:0 3px 8px 0 rgb(15 15 20 / 20%);
-  margin-left: 10px;
-  margin-top: 10px;
-  height: 100%;
+  box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+  z-index: 1;
+  position: fixed;
+  left: 15px;
+  top: 15px;
+  bottom: 15px;
+  width: 300px;
 }
 .presentation-header {
   display: flex;
@@ -37,7 +39,6 @@
 .presentation-content {
   height: 600px;
   display: block;
-  margin-top: 15px;
   overflow: auto;
 }
 .presentation-desc {
@@ -49,4 +50,9 @@
   background: var(--white-background);
   width: 100%;
  
+}
+@media only screen and (max-width: 1000px) {
+  .presentation {
+   display: none;
+  }
 }

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.footer {
+height: 15px;
+width: 300px;
+background-color: red;
+position: fixed;
+bottom:0
+}

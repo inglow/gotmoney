@@ -1,7 +1,58 @@
 @charset "UTF-8";
 
 .content {
-  flex-direction: row;
+}
+.layout {
+  position: absolute;
+  top: 0;
+  left: 315px;
+  right: 105px;
+}
+.container-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--grey-container);
+  height: 15px;
+  z-index: 5;
+}
+.container-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--grey-container);
+  height: 15px;
+  z-index: 5;
+}
+
+.content-body {
+  width: 100%;
+
+  box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+  padding: 15px;
+
+  background: linear-gradient(
+      0deg,
+      rgba(240, 240, 245, 0.9),
+      rgba(240, 240, 245, 0.9)
+    ),
+    url("https://bslthemes.com/arter/light/wp-content/uploads/2020/09/bg.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
   display: flex;
-  background-color: #e0e0e6;
+}
+@media only screen and (max-width: 1000px) {
+  .layout {
+    left: 0px;
+    right: 0px;
+    top: 60px;
+  }
+
+  .container-top,
+  .container-bottom {
+    display: none;
+  }
 }

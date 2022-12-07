@@ -8,13 +8,16 @@ body {
   --grey500-color: #8c8c8e;
   --grey300-color: #c0c0ca;
   --grey-background: #f4f4f6;
-  --white-background: linear-gradient(
-    159deg,
-    #fff 0,
-    rgba(255, 255, 255, 0.95) 100%
-  );
-  --white-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);
+  --grey-container: #e0e0e6;
+  --size-mobile: 750px;
   color: var(--blackLight-color);
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+ background-color: var(--grey-container);
+ margin-top: 15px;
+ padding: 100px;
 }
 h5 {
   color: var(--black-color);
