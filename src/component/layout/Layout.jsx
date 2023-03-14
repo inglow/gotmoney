@@ -12,9 +12,13 @@ function Layout({ children }) {
       <HeaderMobile />
       <div className="container-top" />
       <div className="content">
-        <Presentation />
+        <div className="presentation-desktop">
+          <Presentation />
+        </div>
         <div className="content-body">
-          {children}
+          <div className="body">
+            {children}
+          </div>
           <Footer />
         </div>
         <Menu />

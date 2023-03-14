@@ -1,3 +1,4 @@
+import { Divider } from '@mui/material';
 import React from 'react';
 import 'react-circular-progressbar/dist/styles.css';
 import { FaLinkedin, FaInstagram } from 'react-icons/fa';
@@ -11,9 +12,9 @@ function Presentation() {
     <div className="presentation-header">
       <img className="face" src={logo} alt="Avatar" />
       <h5 className="name-txt">JOUANNY JEROME</h5>
-      <text className="job-txt">Fullstack Developer</text>
-      {/* <Divider /> */}
-      <text className="job-txt">Mobile Apps/ Web Site</text>
+      <div className="job-txt">Fullstack Developer</div>
+      <Divider />
+      <div className="job-txt">Mobile Apps/ Web Site</div>
     </div>
   ), []);
   const RenderPresentationDesc = React.useCallback(() => (
@@ -21,7 +22,7 @@ function Presentation() {
       <PresentationLine name="Residence" value="Canada" />
       <PresentationLine name="Residence" value="Canada" />
       <PresentationLine name="test2" value="Canada" />
-      <CircularProgressBar />
+      <CircularProgressBar percentage={20} />
     </div>
   ), []);
 

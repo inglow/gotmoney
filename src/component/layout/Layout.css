@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-.content {
+.body {
+
 }
 .layout {
-  position: absolute;
-  top: 0;
-  left: 315px;
-  right: 105px;
+  position: relative;
+  max-width:1440px;
+  width:100%;
 }
 .container-top {
   position: fixed;
@@ -18,41 +18,60 @@
   z-index: 5;
 }
 .container-bottom {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background-color: var(--grey-container);
   height: 15px;
   z-index: 5;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 .content-body {
-  width: 100%;
-
   box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
-  padding: 15px;
-
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 300px;
+  margin-right: 80px;
+  margin-bottom: 15px;
   background: linear-gradient(
       0deg,
       rgba(240, 240, 245, 0.9),
       rgba(240, 240, 245, 0.9)
     ),
-    url("https://bslthemes.com/arter/light/wp-content/uploads/2020/09/bg.jpg");
+    url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2Fheader-image-combined-macOS-wallpapers.png&signature=b1a45cfebd396255a9679fa7e6f90c95");
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
-  display: flex;
 }
-@media only screen and (max-width: 1000px) {
-  .layout {
-    left: 0px;
-    right: 0px;
-    top: 60px;
+@media only screen and (max-width: 1200px) {
+  .content-body {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 45px;
   }
-
   .container-top,
   .container-bottom {
     display: none;
   }
+  .presentation-desktop {
+    display: none;
+   }
+}
+@media only screen and (min-width: 1200px) {
+  .content-body {
+    /* margin-top: 15px; */
+  }
+ 
+}
+.presentation-desktop {
+  z-index: 1;
+  position: fixed;
+  bottom:15px;
+  top:15px;
+  width: 300px;
+  background-color:  var(--grey-background);
+
 }
