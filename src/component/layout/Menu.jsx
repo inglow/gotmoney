@@ -1,12 +1,12 @@
 import './Menu.css';
 import React from 'react';
-import { GiHamburgerMenu } from 'react-icons/gi';
+import DrawerRight from './DrawerRight';
 
 function Menu() {
   return (
     <div className="menu-right">
-      <div className="hambuger">
-        <GiHamburgerMenu size={35} />
+      <div className="menu-fixed">
+        <DrawerRight position="right" />
       </div>
     </div>
   );

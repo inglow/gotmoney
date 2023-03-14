@@ -10,7 +10,7 @@ function PresentationLine({ name, value }) {
         {name}
         :
       </h6>
-      <text className="presentation-value">{value}</text>
+      <div className="presentation-value">{value}</div>
     </div>
   );
 }
