@@ -2,12 +2,20 @@
 # Use a Node 16 base image
 FROM node:16-alpine 
 # Set the working directory
-WORKDIR /react-docker
-# Copy app dependencies to container
-COPY ./package*.json ./
-# Add `/app/node_modules/.bin` to $PATH
+# set working directory
+WORKDIR /app
+
+# add `/app/node_modules/.bin` to $PATH
 ENV PATH /app/node_modules/.bin:$PATH
-# Install dependencies
-RUN npm install
-# Deploy app for local development
-CMD npm start --disableHostCheck true
+
+# install app dependencies
+COPY package.json ./
+COPY package-lock.json ./
+RUN npm install --silent
+
+
+# add app
+COPY . ./
+
+# start app
+CMD ["npm", "start"]
