@@ -10,4 +10,4 @@ ENV PATH /app/node_modules/.bin:$PATH
 # Install dependencies
 RUN npm install
 # Deploy app for local development
-CMD npm start 
+CMD npm start --disableHostCheck true
