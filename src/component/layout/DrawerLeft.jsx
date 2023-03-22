@@ -9,18 +9,20 @@ import Presentation from '../Presentation/Presentation';
 function DrawerLeft() {
   const [isOpen, setisOpen] = useState(false);
   return (
-    <div className="ellips">
-      <div>
-        <FaEllipsisV
-          onClick={() => setisOpen(!isOpen)}
-          size={17}
-        />
+    <div>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <div className="ellips">
+          <FaEllipsisV
+            onClick={() => setisOpen(!isOpen)}
+            size={17}
+          />
+        </div>
       </div>
       <Drawer
         open={isOpen}
         onClose={() => setisOpen(!isOpen)}
       >
-        <Navbar>
+        <Navbar className="navbar-mobile">
           <Container className="container-mobile">
             <Presentation />
           </Container>

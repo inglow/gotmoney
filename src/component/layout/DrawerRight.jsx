@@ -8,22 +8,22 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import PropTypes from 'prop-types';
 
 function DrawerRight({ position }) {
-  const [isOpen, setisOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className={`navbar-drawer-mobile-${position}`}>
       <div className={`hamburger-${position}`}>
         <GiHamburgerMenu
-          onClick={() => setisOpen(!isOpen)}
+          onClick={() => setIsOpen(!isOpen)}
           size={20}
         />
       </div>
       <Drawer
         anchor="right"
         open={isOpen}
-        onClose={() => setisOpen(!isOpen)}
+        onClose={() => setIsOpen(!isOpen)}
       >
         <Navbar>
-          <Container className="container-mobile">
+          <Container>
             <Nav className="me-auto-mobile">
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/experience">Experience</Nav.Link>

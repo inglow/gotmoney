@@ -17,5 +17,12 @@ module.exports = {
     'react',
   ],
   rules: {
+    'no-param-reassign': ['error', {
+      props: true,
+      ignorePropertyModificationsFor: [
+        'state',
+      ],
+    }],
+    'global-require': 0,
   },
 };

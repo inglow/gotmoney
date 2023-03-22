@@ -12,7 +12,6 @@ function App() {
   return (
     <Router>
       <Layout>
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/experience" element={<Experience />} />

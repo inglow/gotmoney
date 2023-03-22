@@ -4,7 +4,7 @@
 .navbar-drawer-mobile-right, .navbar-drawer-mobile-top{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
   
 }
 

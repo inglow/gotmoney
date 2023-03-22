@@ -3,13 +3,34 @@ import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import './index.css';
+import { Provider } from 'react-redux';
+import { createTheme, ThemeProvider } from '@mui/material';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import store from './store';
+import colors from './config/colors';
 
+const theme = createTheme({
+  palette: {
+    primary: {
+      // Purple and green play nicely together.
+      main: colors.primaryColor,
+    },
+    secondary: {
+      // This is green.A700 as hex.
+      main: colors.secondaryColor,
+    },
+  },
+});
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </ThemeProvider>
   </React.StrictMode>,
 );
 

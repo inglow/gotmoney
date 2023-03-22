@@ -6,29 +6,32 @@ html {
   overflow: hidden;
   margin: 0;
 }
+:root {
+  --primary-color:#fff;
+  --secondary-color:#f46258;
+  --black-color:#1e1e28;
+  --blackLight-color:#5c5c6f;
+  --grey500-color:#8c8c8e;
+  --grey300-color:#c0c0ca;
+  --grey-background:#f4f4f6;
+  --grey-container:#e0e0e6;
+}
 body {
-  --primary-color: #fff;
-  --secondary-color: #f46258;
-  --black-color: #1e1e28;
-  --blackLight-color: #5c5c6f;
-  --grey500-color: #8c8c8e;
-  --grey300-color: #c0c0ca;
-  --grey-background: #f4f4f6;
-  --grey-container: #e0e0e6;
   --size-mobile: 750px;
+  --white-shadow: 0 1px 4px 0 rgb(15 15 20 / 10%);;
   color: var(--blackLight-color);
   /* Full height */
   height: 100%;
   width: 100%;
   overflow: auto;
-
+  font-size: 13px;
   /* Center and scale the image nicely */
   background-color: var(--grey-container);
   margin-top: 15px;
-    font-size: 13px;
     line-height: 1.7;
     font-family: "Poppins",sans-serif;
     font-weight: 400;
+    letter-spacing: .25px;
 }
 
 #root {
@@ -41,12 +44,11 @@ body {
 
 h5 {
   color: var(--black-color);
-  font-size: 90%;
   font-weight: 600;
+  font-size: 14px;
 }
 
 h6 {
   color: var(--black-color);
-  font-size: 90%;
   font-weight: 400;
 }

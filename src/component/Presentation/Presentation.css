@@ -7,40 +7,49 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: var(--white-background);
+  justify-content: center;
+  background-color: var(--primary-color);
   box-shadow: var(--white-shadow);
-  padding: 50px;
-  height: 300px;
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 .face {
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  height: 90px;
+  width: 90px;
 }
 .name-txt {
   margin-top: 17px;
   text-align: center;
   overflow: hidden;
-  white-space: nowrap;
+  color: var(--blackLight-color);
 }
 .job-txt {
-  font-size: 90%;
   text-align: center;
   overflow: hidden;
-  white-space: nowrap;
+  color: var(--blackLight-color);
 }
 .presentation-content {
-  height: 600px;
+  height: calc(100vh - 300px);
+  width: auto;
   display: block;
   overflow: auto;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .presentation-desc {
-
+  margin-top: 10%;
+}
+.presentation-lang {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .presentation-footer {
   position: absolute;
   bottom: 0px;
-  background: var(--white-background);
-  width: 100%;
-
+  left: 0px;
+  right: 0px;
+  height: 50px;
+  /* background-color: var(--grey-background); */
 }

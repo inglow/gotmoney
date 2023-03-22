@@ -2,4 +2,14 @@
 
 .ellips {
     padding-left: 20px;
-} 
+    
+}
+.container-mobile {
+    display: block !important;
+    padding: 0;
+    min-width: 270px;
+}
+.navbar-mobile {
+    display: block !important;
+    padding: 0;
+}
