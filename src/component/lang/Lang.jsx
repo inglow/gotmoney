@@ -20,7 +20,7 @@ function Lang() {
             src={lang[item].flag}
             alt={lang[item].id}
             style={{
-              height: 25, width: 25, borderColor: 'red',
+              height: 25, width: 25,
             }}
           />
         </div>

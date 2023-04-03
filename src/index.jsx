@@ -8,17 +8,15 @@ import { createTheme, ThemeProvider } from '@mui/material';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import store from './store';
-import colors from './config/colors';
+import color from './config/color';
 
 const theme = createTheme({
   palette: {
     primary: {
-      // Purple and green play nicely together.
-      main: colors.primaryColor,
+      main: color.primaryColor,
     },
     secondary: {
-      // This is green.A700 as hex.
-      main: colors.secondaryColor,
+      main: color.secondaryColor,
     },
   },
 });

@@ -1,0 +1,34 @@
+@charset "UTF-8";
+.recommendation-container {
+  box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+  padding-top: 1.9rem;
+  padding-bottom: 1.3rem;
+  padding-left: 1.9rem;
+  padding-right: 1.9rem;
+  height: 100%;
+  background: var(--white-gradient);
+  display: flex;
+  flex-direction: column;
+}
+.recommendation-title {
+  padding-bottom: 0.1rem;
+}
+.recommendation-description {
+  flex:1;
+  margin-bottom: 1rem;
+}
+.recommendation-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  position: absolute;
+  top: -50px;
+  right: 0;
+}
+.recommendation-avatar-container {
+  position: relative;
+}
+.recommendation-rating {
+  display: flex;
+  flex: 0;
+}

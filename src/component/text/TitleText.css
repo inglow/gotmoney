@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+.title-text {
+    margin-bottom: 1rem;
+    color: var(--black-color);
+    font-size: 18px;
+    font-weight: 600;
+}

@@ -15,6 +15,9 @@ html {
   --grey300-color:#c0c0ca;
   --grey-background:#f4f4f6;
   --grey-container:#e0e0e6;
+  --white-gradient:linear-gradient(
+159deg
+,rgba(255,255,255,1) 0,rgba(255,255,255,0.95) 100%);
 }
 body {
   --size-mobile: 750px;
@@ -51,4 +54,14 @@ h5 {
 h6 {
   color: var(--black-color);
   font-weight: 400;
+  font-size: 13px;
+
+}
+h1 {
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: 36px;
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
 }

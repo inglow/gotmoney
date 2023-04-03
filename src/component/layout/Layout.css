@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 .body {
-
+margin-bottom: 20px;
 }
 .layout {
   position: relative;
@@ -39,8 +39,8 @@
   margin-bottom: 15px;
   background: linear-gradient(
       0deg,
-      rgba(240, 240, 245, 0.9),
-      rgba(240, 240, 245, 0.9)
+      rgba(240, 240, 245, 0.95),
+      rgba(240, 240, 245, 0.95)
     ),
     url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2020%2F01%2Fheader-image-combined-macOS-wallpapers.png&signature=b1a45cfebd396255a9679fa7e6f90c95");
   background-position: center;

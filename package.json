@@ -8,6 +8,7 @@
     "@mui/icons-material": "^5.10.6",
     "@mui/material": "^5.10.6",
     "@mui/styled-engine-sc": "^5.10.6",
+    "@mui/styles": "^5.11.13",
     "@react-navigation/web": "^1.0.0-alpha.9",
     "@reduxjs/toolkit": "^1.9.3",
     "@testing-library/jest-dom": "^5.16.5",
@@ -26,6 +27,7 @@
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.3.0",
     "react-scripts": "^5.0.1",
+    "react-typing-effect": "^2.0.5",
     "redux": "^4.2.1",
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"

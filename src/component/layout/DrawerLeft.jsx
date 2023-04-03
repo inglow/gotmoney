@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import React, { useState } from 'react';
 import { Drawer } from '@mui/material';
 import { FaEllipsisV } from 'react-icons/fa';
-import Presentation from '../Presentation/Presentation';
+import Presentation from '../presentation/Presentation';
 
 function DrawerLeft() {
   const [isOpen, setisOpen] = useState(false);

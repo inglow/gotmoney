@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.number-txt-container {
+    display: flex;
+}
+.number-txt-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.number-span {
+  font-weight: 600;
+  font-size: 25px;
+  color: var(--secondary-color);
+}
+.txt-span {
+  color: var(--black-color);
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 0.5rem;
+}
+.more-span {
+  padding-left: 0.5rem;
+}

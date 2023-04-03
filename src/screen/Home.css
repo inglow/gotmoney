@@ -1,3 +1,13 @@
 @charset "UTF-8";
 
-
+.home-container  {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+.service-home-grid  {
+    background-color: red;
+}
+.margin-home-container  {
+    margin-top: 2rem;
+}

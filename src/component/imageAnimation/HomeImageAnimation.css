@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+.image-animation-container {
+  background-image: url(https://beshley.com/import/arter/01/uploads/2020/09/bg.jpg);
+  object-fit: cover;
+  width: auto;
+  height: 300px;
+  padding-top: 6%;
+ padding-left: 6%;
+}
+.image-animation-title {
+ padding-bottom: 2%;
+}
+.image-animation-span{
+ color: var(--secondary-color);
+}
+.image-animation-typing {
+ padding-bottom: 2%;
+ color: var(--primary-color);
+ font-size: 15px;
+ letter-spacing: 1.5px;
+ font-family: "Courier Prime",monospace;
+}

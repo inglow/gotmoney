@@ -6,7 +6,7 @@ function useIncrement(percentage) {
   React.useEffect(() => {
     const timer = setInterval(() => {
       setProgress((oldProgress) => oldProgress + 1);
-    }, 50);
+    }, 25);
     if (progress === percentage) {
       clearInterval(timer);
     }

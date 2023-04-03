@@ -22,20 +22,23 @@
   margin-top: 17px;
   text-align: center;
   overflow: hidden;
-  color: var(--blackLight-color);
 }
 .job-txt {
   text-align: center;
   overflow: hidden;
   color: var(--blackLight-color);
 }
+.presentation-content::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
 .presentation-content {
-  height: calc(100vh - 300px);
+  height: calc(100vh - 310px);
   width: auto;
   display: block;
   overflow: auto;
   padding-left: 10%;
   padding-right: 10%;
+  padding-bottom: 10%;
 }
 .presentation-desc {
   margin-top: 10%;
@@ -50,6 +53,10 @@
   bottom: 0px;
   left: 0px;
   right: 0px;
-  height: 50px;
-  /* background-color: var(--grey-background); */
+  height: 40px;
+  gap: 5px;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

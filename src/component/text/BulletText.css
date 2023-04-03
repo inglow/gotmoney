@@ -1,14 +1,11 @@
 @charset "UTF-8";
 
-.skill-container {
-
-}
 .skill-row {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.skill-row:not(:first-child){
+.skill-row {
   padding-top: 2%;
 }
 .skill-txt {

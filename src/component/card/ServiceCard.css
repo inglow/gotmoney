@@ -1,0 +1,18 @@
+@charset "UTF-8";
+.service-container {
+  box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+  padding-top: 1.9rem;
+  padding-bottom: 1.3rem;
+  padding-left: 1.9rem;
+  padding-right: 1.9rem;
+  height: 100%;
+  background: var(--white-gradient);
+  display: flex;
+  flex-direction: column;
+}
+.service-title {
+  padding-bottom: 0.1rem;
+}
+.service-description {
+  flex:1
+}

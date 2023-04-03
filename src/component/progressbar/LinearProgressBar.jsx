@@ -4,7 +4,7 @@ import LinearProgress from '@mui/material/LinearProgress';
 
 import './LinearProgressBar.css';
 import useIncrement from '../../hook/useIncrement';
-import colors from '../../config/colors';
+import color from '../../config/color';
 
 function LinearProgressBar({ percentage = 20, name }) {
   const progress = useIncrement(percentage);
@@ -20,7 +20,7 @@ function LinearProgressBar({ percentage = 20, name }) {
       </div>
 
       <LinearProgress
-        sx={{ backgroundColor: colors.grey300Color }}
+        sx={{ backgroundColor: color.grey300Color }}
         variant="determinate"
         value={progress}
         color="secondary"

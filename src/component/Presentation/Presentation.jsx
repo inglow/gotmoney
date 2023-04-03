@@ -27,9 +27,9 @@ function Presentation() {
   ), []);
   const RenderPresentationDesc = React.useCallback(() => (
     <div className="presentation-desc">
-      <PresentationLine name="Residence" value="Canada" />
-      <PresentationLine name="Residence" value="Canada" />
-      <PresentationLine name="test2" value="Canada" />
+      <PresentationLine name="residence" value="france" />
+      <PresentationLine name="city" value="paris" />
+      <PresentationLine name="age" value="28" />
     </div>
   ), []);
 
@@ -43,25 +43,29 @@ function Presentation() {
 
   const RenderPresentationSkill = React.useCallback(() => (
     <div className="presentation-skill">
-      <LinearProgressBar percentage={20} name="html" />
-      <LinearProgressBar percentage={30} name="css" />
-      <LinearProgressBar percentage={80} name="React" />
-      <LinearProgressBar percentage={80} name="React" />
-      <LinearProgressBar percentage={80} name="React" />
-      <LinearProgressBar percentage={80} name="React" />
-      <LinearProgressBar percentage={80} name="React" />
-      <LinearProgressBar percentage={80} name="React" />
-      <LinearProgressBar percentage={80} name="React" />
-      <LinearProgressBar percentage={80} name="React" />
-      <LinearProgressBar percentage={80} name="React" />
-      <LinearProgressBar percentage={80} name="React" />
-      <LinearProgressBar percentage={80} name="React" />
+      <LinearProgressBar percentage={80} name="React Native" />
+      <LinearProgressBar percentage={70} name="React js" />
+      <LinearProgressBar percentage={90} name="JavaScript" />
+      <LinearProgressBar percentage={60} name="TypeScript" />
+      <LinearProgressBar percentage={60} name="Php" />
+      <LinearProgressBar percentage={50} name="Swift/Objective-c" />
+      <LinearProgressBar percentage={90} name="Git" />
+      <LinearProgressBar percentage={60} name="Node" />
+      <LinearProgressBar percentage={90} name="Html" />
+      <LinearProgressBar percentage={90} name="Css" />
+      <LinearProgressBar percentage={70} name="Docker" />
     </div>
   ), []);
 
   const RenderPresentationSoftware = React.useCallback(() => (
     <div className="presentation-software">
-      <BulletText skills={['Bootstrap, Materialize', 'Stylus, Sass, Less']} />
+      <BulletText skills={['VSCode, WebStorm']} />
+      <BulletText skills={['Xcode, Android-Studio']} />
+      <BulletText skills={['GitLab, GitHub']} />
+      <BulletText skills={['Jenkins, Bitrise']} />
+      <BulletText skills={['Aws, Postman']} />
+      <BulletText skills={['Bootstrap, Materialize']} />
+      <BulletText skills={['CSS, Sass, Less']} />
     </div>
   ), []);
 
@@ -77,11 +81,8 @@ function Presentation() {
         <Divider marginVertical={25} />
         <RenderPresentationSoftware />
         <div className="presentation-footer">
-          sddsdds
-          <div className="FaLinkedin" />
-          <FaLinkedin />
-
-          <FaInstagram />
+          <FaLinkedin size={20} />
+          <FaInstagram size={20} />
         </div>
       </div>
 

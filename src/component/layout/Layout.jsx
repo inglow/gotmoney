@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import Presentation from '../Presentation/Presentation';
+import Presentation from '../presentation/Presentation';
 import Menu from './Menu';
 import HeaderMobile from './HeaderMobile';
 import './Layout.css';

@@ -13,7 +13,6 @@ const langSlice = createSlice({
   reducers: {
     changeLang: (state, action) => {
       let newState = frState;
-      console.log(action);
       if (action.payload === lang.english.id) {
         newState = enState;
       }
@@ -26,3 +25,4 @@ const langSlice = createSlice({
 export const { changeLang } = langSlice.actions;
 
 export default langSlice.reducer;
+export const dictionary = (state) => state.lang.dictionary;
