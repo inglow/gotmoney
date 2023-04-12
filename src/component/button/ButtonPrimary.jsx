@@ -4,9 +4,10 @@ import React from 'react';
 import TranslatedText from '../text/TranslatedText';
 import './ButtonPrimary.css';
 
-function ButtonPrimary({ name }) {
+function ButtonPrimary({ name, action }) {
   return (
     <Button
+      onClick={action}
       className="button-primary-text"
       size="large"
       variant="contained"
@@ -20,5 +21,6 @@ function ButtonPrimary({ name }) {
 }
 ButtonPrimary.propTypes = {
   name: PropTypes.string.isRequired,
+  action: PropTypes.func.isRequired,
 };
 export default ButtonPrimary;

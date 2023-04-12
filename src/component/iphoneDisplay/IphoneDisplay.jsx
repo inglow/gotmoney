@@ -2,51 +2,61 @@ import React, { useState } from 'react';
 import ReactPlayer from 'react-player';
 import './IphoneDisplay.css';
 import PropTypes from 'prop-types';
-import twa from '../../assets/video/twa1.mp4';
+
 import useWindowSize from '../../hook/useWindowSize';
 
 function IphoneDisplay({ video }) {
-  const [, setIsVideoLoaded] = useState(false);
+  const [playIndex, setPlayIndex] = useState(0);
   const { width } = useWindowSize();
-  const mobileMode = width > 1200 ? {
-    width: 300,
-    height: 650,
-  } : {
-    width: 161,
-    height: 350,
-  };
-  const onLoadedData = () => {
-    setIsVideoLoaded(true);
-    console.log(video);
-  };
+
+  const nextVideo = React.useCallback(() => {
+    if (playIndex + 1 === video.length) {
+      setPlayIndex(0);
+    } else { setPlayIndex((oldPlayIndex) => oldPlayIndex + 1); }
+  }, [playIndex]);
+  const videoDecorator = React.useCallback(() => {
+    if (width < 700) {
+      return {
+        width: 150, height: 325, borderRadius: 20, boxShadow: '0px 0px 0px 5px #1f1f1f,0px 0px 0px 6px #191919, 0px 0px 0px 10px #111',
+      };
+    }
+    if (width < 900) {
+      return {
+        width: 230, height: 499, borderRadius: 18, boxShadow: '0px 0px 0px 9px #1f1f1f,0px 0px 0px 10px #191919, 0px 0px 0px 15px #111',
+      };
+    }
+    return {
+      width: 300,
+      height: 650,
+      borderRadius: 40,
+      boxShadow: '0px 0px 0px 11px #1f1f1f,0px 0px 0px 13px #191919, 0px 0px 0px 20px #111',
+    };
+  }, [width]);
+
   return (
     <div className="iphone-x-container">
-
       <div
         className="iphone-x"
-        style={mobileMode}
+        style={videoDecorator()}
       >
-
-        <span>Left action button</span>
-        <span>Right action button</span>
         <div className="iphone-footer" />
       </div>
       <ReactPlayer
-        url={twa}
+        url={video[playIndex]}
         playing
         controls
-        loop
-        height={mobileMode.height}
-        width={mobileMode.width}
+        loop={video.length === 1}
+        height={videoDecorator().height}
+        width={videoDecorator().width}
         muted
         playsinline
-        onReady={onLoadedData}
+        onEnded={nextVideo}
       />
     </div>
 
   );
 }
 IphoneDisplay.propTypes = {
-  video: PropTypes.string.isRequired,
+  video: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 export default IphoneDisplay;

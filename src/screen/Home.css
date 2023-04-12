@@ -11,3 +11,35 @@
 .margin-home-container  {
     margin-top: 2rem;
 }
+.example-project-container  {
+    box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+    background-color:  var(--primary-color);
+    padding-top: 1.9rem;
+    padding-bottom: 1.3rem;
+    padding-left: 1.9rem;
+    padding-right: 1.9rem;
+
+}
+.example-project-stat-img  {
+    width: 100%
+}
+.example-project-stat  {
+    margin-top: 1rem;
+    background-color:  var(--primary-color);
+    box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+    display: flex;
+    justify-content: center;
+}
+.example-project-rating-img  {
+    width: 110%;
+    background-color:  var(--primary-color);
+    box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+}
+.example-project-rating  {
+    display: flex;
+}
+.example-project-iphone  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
