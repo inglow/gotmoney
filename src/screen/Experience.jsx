@@ -1,8 +1,8 @@
 import React from 'react';
 import sampleoStore from '../assets/video/sampleo-store.mp4';
 import sampleoCampaign from '../assets/video/sampleo-campaign.mp4';
-// import sampleoPresentation from '../assets/video/sampleo-presentation.mp4';
-// import sampleoProfil from '../assets/video/sampleo-profil.mp4';
+import sampleoPresentation from '../assets/video/sampleo-presentation.mp4';
+import sampleoProfil from '../assets/video/sampleo-profil.mp4';
 // import sampleoUnconnected from '../assets/video/sampleo-unconnected.mp4';
 // import twaStore from '../assets/video/twa-store.mp4';
 // import twaCampaign from '../assets/video/twa-campaign.mp4';
@@ -17,7 +17,12 @@ import PresentationIphone from '../component/presentation/PresentationIphone';
 function Experience() {
   return (
     <div className="container-experience">
-      <PresentationIphone video={[{ name: 'sampleostore', video: sampleoStore }, { name: 'campaign', video: sampleoCampaign }]} />
+      <PresentationIphone video={[{ name: 'sampleostore', video: sampleoStore },
+        { name: 'campaign', video: sampleoCampaign },
+        { name: 'presentation', video: sampleoPresentation },
+        // { name: 'unconnected', video: sampleoUnconnected },
+        { name: 'profile', video: sampleoProfil }]}
+      />
       {/* <IphoneDisplay video={[sampleoStore,
         sampleoCampaign, sampleoPresentation,
         sampleoProfil, sampleoUnconnected]}
@@ -27,6 +32,7 @@ function Experience() {
         twaProfil, twaRegister]}
       />
       <IphoneDisplay video={[bfanDrawer]} /> */}
+      {/* <IphoneDisplay video={[bfanDrawer]} /> */}
     </div>
   );
 }
