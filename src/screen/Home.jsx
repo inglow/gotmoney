@@ -47,7 +47,7 @@ function Home() {
   const DisplayExampleProject = React.useCallback(() => (
     <div className="margin-home-container">
       <TitleText title="recommendations" />
-      <Grid container spacing={5} sx={{ alignItems: 'center' }}>
+      <Grid container spacing={5}>
         <Grid
           xs={12}
           sm={5}

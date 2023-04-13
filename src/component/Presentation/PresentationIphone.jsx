@@ -11,7 +11,7 @@ function PresentationIphone({ video }) {
   const RenderBtnIphone = React.useCallback(() => (
     video.map((v) => (
       <div key={v.name}>
-        <ButtonPrimary name={v.name} action={() => setVideoSelected([v.video])} />
+        <ButtonPrimary name={v.name} action={() => setVideoSelected([v.video])} fullWidth />
       </div>
     ))
   ), []);
