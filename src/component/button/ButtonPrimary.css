@@ -1,6 +1,7 @@
 @charset "UTF-8";
 .button-primary-text {
 margin: 1%;
+white-space: nowrap;
 }
 .button-primary-full-width {
 width: 100%;

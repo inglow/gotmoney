@@ -8,14 +8,14 @@ import useWindowSize from '../../hook/useWindowSize';
 function IphoneDisplay({ video }) {
   const [playIndex, setPlayIndex] = useState(0);
   const { width } = useWindowSize();
-
+  console.log(width);
   const nextVideo = React.useCallback(() => {
     if (playIndex + 1 === video.length) {
       setPlayIndex(0);
     } else { setPlayIndex((oldPlayIndex) => oldPlayIndex + 1); }
   }, [playIndex]);
   const videoDecorator = React.useCallback(() => {
-    if (width < 700) {
+    if (width < 750) {
       return {
         width: 150, height: 325, borderRadius: 20, boxShadow: '0px 0px 0px 5px #1f1f1f,0px 0px 0px 6px #191919, 0px 0px 0px 10px #111',
       };
@@ -25,9 +25,15 @@ function IphoneDisplay({ video }) {
         width: 230, height: 499, borderRadius: 18, boxShadow: '0px 0px 0px 9px #1f1f1f,0px 0px 0px 10px #191919, 0px 0px 0px 15px #111',
       };
     }
+    if (width < 1300) {
+      return {
+        width: 240, height: 520, borderRadius: 18, boxShadow: '0px 0px 0px 11px #1f1f1f,0px 0px 0px 13px #191919, 0px 0px 0px 20px #111',
+      };
+    }
+
     return {
-      width: 300,
-      height: 650,
+      width: 277,
+      height: 600,
       borderRadius: 40,
       boxShadow: '0px 0px 0px 11px #1f1f1f,0px 0px 0px 13px #191919, 0px 0px 0px 20px #111',
     };

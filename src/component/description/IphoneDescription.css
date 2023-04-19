@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.txt-underline-iphone-description {
+  text-decoration: underline;
+}
+.block-iphone-description {
+  padding-bottom: 3px;
+}
+.subtitle-iphone-description {
+  padding-bottom: 3px;
+ color:var(--grey500-color);
+ display: flex;
+ align-items: center;
+}
