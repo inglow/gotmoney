@@ -1,8 +1,13 @@
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
 import React from 'react';
+import { Box } from '@mui/material';
 import sampleoRating from '../assets/sampleoRating.png';
 import sampleoStat from '../assets/sampleoStat.png';
 import twaRating from '../assets/twaRating.png';
+import sampleoPresentation from '../assets/video/sampleo-presentation.mp4';
+import sampleoStore from '../assets/video/sampleo-store.mp4';
+import twaPresentation from '../assets/video/twa-presentation.mp4';
+import twaStore from '../assets/video/twa-store.mp4';
 import RecommendationCard from '../component/card/RecommendationCard';
 import ServiceCard from '../component/card/ServiceCard';
 import HomeImageAnimation from '../component/imageAnimation/HomeImageAnimation';
@@ -12,11 +17,8 @@ import TitleText from '../component/text/TitleText';
 import numberText from '../config/numberText';
 import recommendation from '../config/recommendation';
 import service from '../config/service';
-import twaStore from '../assets/video/twa-store.mp4';
-import twaPresentation from '../assets/video/twa-presentation.mp4';
-import sampleoStore from '../assets/video/sampleo-store.mp4';
-import sampleoPresentation from '../assets/video/sampleo-presentation.mp4';
 
+import { SummaryDescription } from '../component/description/IphoneDescription';
 import './Home.css';
 
 function Home() {
@@ -25,7 +27,7 @@ function Home() {
       <TitleText title="myService" />
       <Grid container spacing={2}>
         { service.map((s) => (
-          <Grid item md={4} xs={6}>
+          <Grid item md={4} xs={6} key={s.title}>
             <ServiceCard title={s.title} description={s.description} />
           </Grid>
         ))}
@@ -37,7 +39,7 @@ function Home() {
       <TitleText title="recommendations" />
       <Grid container spacing={5}>
         { recommendation.map((r) => (
-          <Grid item md={6} xs={12}>
+          <Grid item md={6} xs={12} key={r.name}>
             <RecommendationCard name={r.name} image={r.image} recommendation={r.recommendation} />
           </Grid>
         ))}
@@ -47,7 +49,7 @@ function Home() {
   const DisplayExampleProject = React.useCallback(() => (
     <div className="margin-home-container">
       <TitleText title="recommendations" />
-      <Grid container spacing={5}>
+      <Grid container spacing={2}>
         <Grid
           xs={12}
           sm={5}
@@ -55,31 +57,21 @@ function Home() {
           <div className="example-project-iphone">
             <IphoneDisplay video={[sampleoStore, sampleoPresentation, twaStore, twaPresentation]} />
           </div>
-          <Grid
-            container
+          <Box
+            className="example-project-rating"
             sx={{ display: { xs: 'none', sm: 'flex' } }}
           >
-            <Grid
-              sm={6}
-              item
-            >
-              <img
-                className="example-project-rating-img"
-                src={sampleoRating}
-                alt="freelance"
-              />
-            </Grid>
-            <Grid
-              item
-              sm={6}
-            >
-              <img
-                className="example-project-rating-img"
-                src={twaRating}
-                alt="freelance"
-              />
-            </Grid>
-          </Grid>
+            <img
+              className="example-project-rating-img"
+              src={sampleoRating}
+              alt="freelance"
+            />
+            <img
+              className="example-project-rating-img"
+              src={twaRating}
+              alt="freelance"
+            />
+          </Box>
         </Grid>
 
         <Grid
@@ -87,18 +79,7 @@ function Home() {
           xs={12}
           sm={7}
         >
-          <div className="example-project-container">
-            <h5> Création de 2 applications de zéro du dévelopement à la mise en production</h5>
-            <div>Langage utilisé : react native avec expo (es6)</div>
-            <div>IDE : VSCODE - Android studio - Xcode</div>
-            <div>
-              Fonctionnalités mobile: Push notification - Deeplink
-              - Universal link - Payement en ligne
-            </div>
-            <div>
-              Librairie utilisé : react-navigation, redux (thunk), react context, native-base
-            </div>
-          </div>
+          <SummaryDescription />
           <div className="example-project-stat">
             <img
               className="example-project-stat-img"

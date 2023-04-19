@@ -31,12 +31,17 @@
     justify-content: center;
 }
 .example-project-rating-img  {
-    width: 110%;
+    width: 80%;
     background-color:  var(--primary-color);
     box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
 }
 .example-project-rating  {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
 }
 .example-project-iphone  {
     display: flex;

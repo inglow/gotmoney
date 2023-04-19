@@ -22,7 +22,7 @@ function IphoneDisplay({ video }) {
     }
     if (width < 900) {
       return {
-        width: 230, height: 499, borderRadius: 18, boxShadow: '0px 0px 0px 9px #1f1f1f,0px 0px 0px 10px #191919, 0px 0px 0px 15px #111',
+        width: 230, height: 497, borderRadius: 18, boxShadow: '0px 0px 0px 9px #1f1f1f,0px 0px 0px 10px #191919, 0px 0px 0px 15px #111',
       };
     }
     if (width < 1300) {

@@ -14,9 +14,11 @@ function IphoneDescription({ type }) {
         <TranslatedText txt="appFromScratch" />
         {' '}
         <br />
-        Webedia -
-        {' '}
         {name}
+        {' '}
+        <TranslatedText txt="for" />
+        {' '}
+        Webedia !
       </h4>
       )}
       <div className="subtitle-iphone-description">
@@ -138,12 +140,11 @@ function IphoneDescription({ type }) {
   const RenderDescBfan = React.useCallback(({ featureJob }) => (
     <div>
 
-      <h3>
+      <h4>
         <TranslatedText txt="bfanTitle" />
         {' '}
         <br />
-
-      </h3>
+      </h4>
       <div className="subtitle-iphone-description">
         <TranslatedText txt="bfanDesc" />
       </div>
@@ -155,7 +156,6 @@ function IphoneDescription({ type }) {
         {' '}
         React native
         {' '}
-
       </div>
       <div className="block-iphone-description">
         <span className="txt-underline-iphone-description">IDE:</span>
@@ -214,7 +214,7 @@ function IphoneDescription({ type }) {
       case 'twa':
         return (
           <RenderDescWebedia
-            name="twa"
+            name="TWA"
             featureJob={['participateCampaignRs', 'tunnelRegister', 'linkRS', 'billing', 'answerSurvey', 'participationMission', 'profile', 'unConnectAccess']}
             rating={5}
           />
@@ -229,7 +229,7 @@ function IphoneDescription({ type }) {
       default:
         return (
           <RenderDescWebedia
-            name="Sampleo"
+            name="SAMPLEO"
             downloadIos="38.1"
             downloadAndroid="74"
             featureJob={['participateCampaignRs', 'answerSurvey', 'participationMission', 'profile', 'unConnectAccess']}
@@ -242,6 +242,62 @@ function IphoneDescription({ type }) {
     <RenderDescByType />
   );
 }
+export function SummaryDescription() {
+  return (
+    <div className="example-project-container">
+      <h5> Création de 2 applications de zéro du dévelopement à la mise en production</h5>
+      <div className="block-iphone-description">
+        <span className="txt-underline-iphone-description">
+          <TranslatedText txt="languageUsed" />
+          :
+        </span>
+        {' '}
+        React native
+        {' '}
+        <TranslatedText txt="with" />
+        {' '}
+        expo (es6)
+      </div>
+      <div className="block-iphone-description">
+        <span className="txt-underline-iphone-description">IDE:</span>
+        {' '}
+        VSCODE - Android studio - Xcode
+      </div>
+      <div className="block-iphone-description">
+        <div>
+          <span className="txt-underline-iphone-description">
+            {' '}
+            <TranslatedText txt="featuresMobile" />
+            :
+
+          </span>
+        </div>
+        {' '}
+        Push notification - Deeplink - Universal link -
+        {' '}
+        <TranslatedText txt="payOnline" />
+        {' '}
+        -
+        {' '}
+        <TranslatedText txt="interApp" />
+        {' '}
+        -
+        {' '}
+        <TranslatedText txt="deployment" />
+        <br />
+      </div>
+      <div className="block-iphone-description">
+        <span className="txt-underline-iphone-description">
+          <TranslatedText txt="libraryUsed" />
+          :
+        </span>
+        {' '}
+        react-navigation, redux (thunk), react context, native-base
+      </div>
+    </div>
+  );
+}
+
 IphoneDescription.propTypes = {
   type: PropTypes.string.isRequired,
 };
