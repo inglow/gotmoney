@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+.image-link-store{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}

@@ -1,12 +1,14 @@
 import { Rating } from '@mui/material';
 import PropTypes from 'prop-types';
 import React from 'react';
+import stores from '../../config/stores';
+import ImageLinkStore from '../imageLink/ImageLinkStore';
 import TranslatedText from '../text/TranslatedText';
 import './IphoneDescription.css';
 
 function IphoneDescription({ type }) {
   const RenderDescWebedia = React.useCallback(({
-    name, downloadIos, downloadAndroid, rating, featureJob,
+    name, downloadIos, downloadAndroid, rating, featureJob, store,
   }) => (
     <div>
       {name && (
@@ -135,6 +137,10 @@ function IphoneDescription({ type }) {
           </div>
         ))}
       </div>
+      <ImageLinkStore
+        ios={store.ios}
+        android={store.android}
+      />
     </div>
   ), []);
   const RenderDescBfan = React.useCallback(({ featureJob }) => (
@@ -209,6 +215,7 @@ function IphoneDescription({ type }) {
             downloadAndroid="74"
             featureJob={['participateCampaign', 'answerSurvey', 'participationMission', 'profile', 'unConnectAccess']}
             rating={4.5}
+            store={stores.sampleo}
           />
         );
       case 'twa':
@@ -217,11 +224,14 @@ function IphoneDescription({ type }) {
             name="TWA"
             featureJob={['participateCampaignRs', 'tunnelRegister', 'linkRS', 'billing', 'answerSurvey', 'participationMission', 'profile', 'unConnectAccess']}
             rating={5}
+            store={stores.twa}
+
           />
         );
       case 'bfan':
         return (
           <RenderDescBfan
+            store={stores.twa}
             featureJob={['intReact', 'dev2View', 'updateAPP', 'mapDynamic', 'improveAuto', 'deployment']}
           />
         );
@@ -232,6 +242,7 @@ function IphoneDescription({ type }) {
             name="SAMPLEO"
             downloadIos="38.1"
             downloadAndroid="74"
+            store={stores.sampleo}
             featureJob={['participateCampaignRs', 'answerSurvey', 'participationMission', 'profile', 'unConnectAccess']}
             rating={4.5}
           />

@@ -12,3 +12,9 @@
  display: flex;
  align-items: center;
 }
+.store-iphone-description {
+  justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
