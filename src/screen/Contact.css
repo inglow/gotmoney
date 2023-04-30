@@ -1,2 +1,32 @@
 @charset "UTF-8";
 
+.contact-card {
+    box-shadow: 0 3px 8px 0 rgb(15 15 20 / 20%);
+    background: var(--white-gradient);
+    width: fit-content;
+    padding: 2rem;
+    margin: 5px
+}
+.contact-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+input {
+  height: 40px;
+  background-color:var(--grey-background);
+  border: none;
+}
+input:focus {
+  border-color: var(--secondary-color) !important;
+}
+input:focus + .icon-form {
+  background-color:var(--secondary-color);
+  border-color: var(--secondary-color) !important;
+  color :red
+}
+.input-container {
+  display: flex;
+  flex-direction: row-reverse;
+
+}

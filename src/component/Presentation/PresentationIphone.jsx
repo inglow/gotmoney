@@ -55,7 +55,6 @@ function PresentationIphone({ video, type }) {
         <Grid
           item
           sm={6}
-          spacing={2}
           xs={12}
           display="flex"
           justifyContent="center"
@@ -74,7 +73,12 @@ function PresentationIphone({ video, type }) {
 
   return (
     <div className="iphone-presentation-container">
-      <Grid container>
+      <Grid
+        container
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+      >
         <Grid
           item
           md={4}
